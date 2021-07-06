@@ -4,55 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pexel Clone</title> 
     <style>
-        #w3school{
-            color: green;
-            background-color: white;
-            height: 60px;
+        body{
+            margin: 0%;
         }
-        #navigation_bar{
-            background-color: black;
-            color: white;
-            height: 60px;
+        #main_section{
+            height: 80vh;
+            background-image: url("https://images.pexels.com/photos/4675498/pexels-photo-4675498.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
         }
-        #tutorial_side_bar{
-          background-color: lightgray;
-          width: 20%;
-          
+        #main_section_background{
+            height: 100%;
+            background-color: rgba(255,  255, 255,  0.1);     
         }
-        #tutorial_advert{
-            background-color: lightgray;
-            width: 15%;
+        #navigation_bar_section{
+            background-color: whitesmoke;
+            height: 50px;
+            
         }
-        #main_structure{
-            display: flex;
-            height: 75vh;
-            width: 100vw
+        #main_content_section{
+            background-color: yellow;
+            height: 20px;
         }
-        #tutorial_content{
-            background-color: white;
-            width: 65%;
+        #pexels_logo{
+            color: yellowgreen;
+            /* text-align: center; */
+            text-decoration: line-through;
+            text-transform: uppercase;
+            font-size: 30px;
+            font-style: italic;
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
-    <div id="w3school">
-        <P> W3SCHOOL</P>
-    </div>
-    <div id="navigation_bar">
-        <p> HTML</p>
-    </div>
-    <div id="main_structure">
-        <div id="tutorial_side_bar">
-            <p>secion one</p>
-        </div>
-        <div id="tutorial_content">
-           <p>section two</p> 
-        </div>
-        <div id="tutorial_advert">
-            <p>section three</p>
-        </div>
+    <div id="main_section">
+        <div id="main_section_background">
+            <div id="navigation_bar_section">
+                <p id="pexels_logo">pexels</p>
+            </div>
+            <div id="main_content_section">
+
+            </div>
+         </div>
     </div>
 </body>
 </html>
