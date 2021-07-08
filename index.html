@@ -23,6 +23,9 @@
         #navigation_bar_section{
             background-color: whitesmoke;
             height: 50px;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 20px;
             
         }
         #main_content_section{
@@ -30,13 +33,21 @@
             height: 20px;
         }
         #pexels_logo{
-            color: yellowgreen;
+            color: black;
             /* text-align: center; */
             text-decoration: line-through;
             text-transform: uppercase;
-            font-size: 30px;
+            font-size: 15px;
             font-style: italic;
             font-weight: bold;
+        }
+        #logo_container{
+            
+        }
+        #navigation_item_container{
+            width: 30%;
+            display: flex;
+            justify-content: space-evenly;
         }
     </style>
 </head>
@@ -44,7 +55,15 @@
     <div id="main_section">
         <div id="main_section_background">
             <div id="navigation_bar_section">
-                <p id="pexels_logo">pexels</p>
+                <div id="logo_container">
+                    <p id="pexels_logo">pexels</p>
+                </div>      
+                <div id="navigation_item_container">
+                    <p>Explore</p>
+                    <p>License</p>
+                    <p>Upload</p>
+                    <P>Join</P>
+                </div>
             </div>
             <div id="main_content_section">
 
