@@ -1,34 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Webpage Design</title>
+    <link rel="stylesheet" href="style.css">
     <style>
-        #main_div_section{
+        .{
+            margin: 0;
+            padding: 0;
+        }
+        .main{
+            width: 100vw;
+            background: linear-gradient(to top, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%), url(1.jpz);
+            background-position: center;
+            background-size: cover;
             height: 100vh;
-            width: 80vw;
-            background-color: black;
         }
-        #content_div{
+        .navnar{
+            width: 120px;
+            height: 75px;
+            margin: auto;
+        }
+        .icon{
+            width: 200px;
+            float: left;
+            height: 70px;
+        }
+        .logo{
+            color: orange;
+            font-size: 35px;
+            font-family: Arial, Helvetica, sans-serif;
+            padding-left: 20px;
+            float: left;
+            padding-top: 10px;
+        }
+        .menu{
+            width: 400px;
+            float: left;
+            height: 70px;
+        }
+        ul{
+            float: left;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        ul li{
+            list-style: none;
+            margin: 62px;
+            margin-top: 27px;
+            font-size: 15px;
+        }
+        ul li a{
+            text-decoration: none;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            transition: 0.4% ease-in-out;
+        }
+        ul li a:hover{
+            color: orange;
+        }    
+        .search{
+            width: 330px;
+            float:left;
+            margin-left: 270px;
+        }
+        .srch{
+            font-family: 'Times New Roman', Times, serif;
+            width: 200px;
+            height: 40px;
+            background: transparent;
+            border: 1px solid orange;
+            margin-top: 13px;
+            color: white;
+            border-right: none;
+            font-size: 10px;
+            float: left;
+            padding: 10px;
+            border-bottom-left-radius: 5px;
+            border-top-left-radius: 5px;
+        }
+        .btn{
+            width: 100px;
+            height: 40px;
+            background: orange;
+            border: 2px solid orange;
+            margin-top: 13px;
+            color: white;
+            font-size: 10px;
+            border-bottom-right-radius: 5px;
+            border-bottom-left-radius: 5px;
+        }
+        .btn:focus{
+            outline: none;
+        }
+        .srch.btn:focus{
+            outline: none;
+        }
+        .content{
+            width: 70px;
+            height: auto;
+            margin: auto;
+            color: white;
+            position: relative;
 
-        }
-        #navigation_bar{
-
-        }
-        #image_gallery_div{
-
-        }
+        }            
     </style>
-</head>
+</head>    
 <body>
-    <div id="main_div_section">
+<div class="main">
+    <div class="navbar">
+        <div class="icon">
+            <h2 class="logo">ProRoz</h2>
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li> 
+                <li><a href="#">SERVICE</a></li>
+                <li><a href="#">DESIGN</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </div>
+        <div class="search">
+            <input class="srch" type="search" name="" placeholder="Type to text">
+            <a href="#"> <button class="btn">Search</button></a>
+        </div>
     </div>
-    <div id="content_div">
-        <div id="navigation_bar">
-            <div id="image_gallery_div">
+    <div class="content">
+        <h1>Web Design & <br><span<span>Development</span><br>course</h1>
+        <p class="par">Lorem ipsum dolor sit amet consectetur adipisicing elit.<br> Illo velit quasi laborum ab nostrum quibusdam <br>facere <br> ipsam. 
+           <br> Illum, nisi? Repellendus praesentium deleniti excepturi amet dignissimos <br>nihil veniam consequatur! Molestias, omnis?</p>
 
-            </div>
+           <button class="cn"><a href="#">JOIN US</a></button>
+    </div>
+</div>
 </body>
 </html>
